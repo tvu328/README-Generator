@@ -5,9 +5,60 @@ const inquirer = require ("inquirer")
 const fs = require ("fs")
 const questions = [
     {
-        
-    }
-];
+        message: 'What is the title of your project?',
+        type:'input',
+        name: 'title'   
+    },
+    {
+        message: 'What is a description about your project?',
+        type:'input',
+        name: 'description'   
+    },
+    {
+        message: 'What are the installation instructions for your project?',
+        type:'input',
+        name: 'installation'   
+    },
+    {
+        message: 'What is the usage information of your project?',
+        type:'input',
+        name: 'usage'   
+    },
+    {
+        message: 'What are the contribution guidelines of your project?',
+        type:'input',
+        name: 'contribution'   
+    },
+    {
+        message: 'What are the test instructions of your project?',
+        type:'input',
+        name: 'test'   
+    },
+    {
+        message: 'What license are you using for your project?',
+        type:'list',
+        choices:['Apache', 'BSD 3-Clause', 'GPL', 'MIT', 'None'] , 
+        name: 'license'   
+    },
+    {
+        message: 'What is your GitHub username?',
+        type:'input',
+        name: 'username'   
+    },
+    {
+        message: 'What is your email address for additional questions to be asked?',
+        type:'input',
+        name: 'email'   
+    },
+
+]
+
+inquirer.prompt(questions)
+    .then(answers => {
+        console.log(answers)
+    let readMeElem = 
+    (err=> console.log(err))
+    
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
