@@ -4,25 +4,26 @@ function renderLicenseBadge(license) {
   if (license !== 'None') {
     return`![github license](https://img.shields.io/badge/license-${license}-blue.svg)`
   }
-  return""
+  return '';
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
-    return``
+    return `\n* [License](#license)\n`;
   }
-  return""
+  return '';
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-    return
+    return `## License
+This project is licensed under the ${license} license.`;
   }
-  return""
+  return '';
 }
 
 // TODO: Create a function to generate markdown for README
@@ -35,8 +36,15 @@ ${renderLicenseBadge(data.license)}
 ${data.description}
 
 # Table of Contents
+[Installation](#installation)
 
-# Installation
+[Usage](#usage)
+
+[Contribution]($contribution)
+
+[License]($license)
+
+# Installation 
 ${data.installation}
 
 # Usage
@@ -45,11 +53,16 @@ ${data.usage}
 # Contribution
 ${data.contribution}
 
+# License
+${data.license}
+${renderLicenseLink(data.license)}
+${renderLicenseSection(data.license)}
+
 # Tests
 ${data.test}
 
 # Questions
-${data.username}
+[${data.username}](https://github.com/${data.username}/)
 ${data.email}`
   ;
 }
