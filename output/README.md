@@ -1,9 +1,9 @@
-## as
+## README Generator
 
-![github license](https://img.shields.io/badge/license-Apache-blue.svg)
+![github license](https://img.shields.io/badge/license-BSD_3--Clause-blue.svg)
 
 # Description
-as
+info here
 
 # Table of Contents
 [Installation](#installation)
@@ -17,22 +17,23 @@ as
 
 
 # Installation 
-a
+info here
 
 # Usage
-sa
+info here
 
 # Contribution
-s
+info here
 
 # License
 ## License
-This project is licensed under the Apache license.
-Apache
+This project is licensed under the BSD_3--Clause license.
+BSD_3--Clause
 
 # Tests
-as
+info here
 
 # Questions
-[a](https://github.com/a/)
+[tvu328](https://github.com/tvu328/)
 
+tylerlvvu@gmail.com
